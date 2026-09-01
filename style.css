@@ -1,0 +1,123 @@
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #111111, #2a2a2a);
+        color: #f3f4f6;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 16px;
+      }
+
+      .container {
+        width: min(1100px, 100%);
+        background: rgba(17, 17, 17, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+        padding: 40px 28px;
+      }
+
+      .topo {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .tag {
+        display: inline-block;
+        background: #e5e7eb;
+        color: #111827;
+        font-weight: 700;
+        border-radius: 999px;
+        padding: 6px 14px;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 4vw, 3.2rem);
+        margin: 0 0 12px;
+        color: #f9fafb;
+      }
+
+      .intro {
+        margin: 0 auto;
+        max-width: 700px;
+        color: #d1d5db;
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      .exercise-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 64px;
+        text-decoration: none;
+        color: #111827;
+        background: linear-gradient(135deg, #e5e7eb, #9ca3af);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 12px;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 8px 18px rgba(255, 255, 255, 0.08);
+      }
+
+      .exercise-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(255, 255, 255, 0.12);
+      }
+
+      .exercise-btn.alt {
+        background: linear-gradient(135deg, #d1d5db, #6b7280);
+        color: #111827;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;
+      }
+
+      .back-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #111827;
+        background: linear-gradient(135deg, #f3f4f6, #d1d5db);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 999px;
+        padding: 12px 22px;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+      }
+
+      .back-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 28px 18px;
+        }
+
+        .grid {
+          grid-template-columns: repeat(2, minmax(120px, 1fr));
+        }
+      }
