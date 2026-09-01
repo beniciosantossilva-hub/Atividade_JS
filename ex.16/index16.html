@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 16</title>
+    <link rel="stylesheet" href="style16.css">
+</head>
+<body>
+    <main class="container">
+        <span class="etiqueta">Exercício 16</span>
+        <h1>Lista de Participantes</h1>
+        <p class="introducao">
+            Adicione nomes e acompanhe os dados armazenados no array.
+        </p>
+ 
+        <section class="painel-array">
+            <article>
+                <span>Quantidade</span>
+                <strong id="quantidade">0</strong>
+            </article>
+ 
+            <article>
+                <span>Primeiro nome</span>
+                <strong id="primeiroNome">—</strong>
+            </article>
+ 
+            <article>
+                <span>Último nome</span>
+                <strong id="ultimoNome">—</strong>
+            </article>
+        </section>
+ 
+        <label for="nome">Nome do participante:</label>
+        <input
+            type="text"
+            id="nome"
+            placeholder="Exemplo: Mariana"
+            autocomplete="off"
+        >
+ 
+        <div class="botoes">
+            <button onclick="adicionarNome()">Adicionar nome</button>
+            <button class="secundario" onclick="limparLista()">Limpar lista</button>
+        </div>
+ 
+        <p id="mensagem" class="mensagem" aria-live="polite">
+            Digite um nome para começar.
+        </p>
+ 
+        <section class="lista-container">
+            <h2>Nomes cadastrados</h2>
+            <ol id="listaNomes">
+                <li class="vazio">Nenhum nome cadastrado.</li>
+            </ol>
+        </section>
+    </main>
+ 
+    <div class="voltar-container" style="margin-top: 24px; text-align: center;">
+        <a href="index.html" style="display:inline-block;padding:12px 20px;border-radius:999px;background:#5b36a8;color:#fff;text-decoration:none;font-weight:bold;">Voltar para seleção</a>
+    </div>
+    <script src="script16.js"></script>
+</body>
+</html>
